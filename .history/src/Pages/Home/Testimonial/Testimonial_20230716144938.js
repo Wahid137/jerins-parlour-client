@@ -32,7 +32,7 @@ const Testimonial = () => {
         }
     ]
     return (
-        <div className='py-20 bg-base-100'>
+        <div className='py- bg-base-100'>
             <div className='mx-auto text-center w-1/2'>
                 <p className='text-2xl font-bold text-black mb-20'>Testimonials</p>
             </div>

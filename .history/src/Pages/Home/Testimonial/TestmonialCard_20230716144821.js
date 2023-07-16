@@ -15,7 +15,7 @@ const TestimonialCard = ({ customerInformation }) => {
                 </div>
             </div>
             <div className="mt-5">
-                <p className='mb-2'>{quote}</p>
+                <p className=' mb-2'>{quote}</p>
                 <Rating stars={rating}></Rating>
             </div>
         </div>

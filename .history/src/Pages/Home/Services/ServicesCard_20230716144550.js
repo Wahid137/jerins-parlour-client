@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const ServicesCard = ({ service }) => {
     const { name, img, price, details } = service;
     return (
-        <Link to="/book">
-            <div className="card w-96 bg-secondary mx-auto hover:bg-base-100">
+        <Link>
+            <div className="card w-96 bg-white mx-auto hover">
                 <figure className="mt-10">
                     <img src={img} alt="Shoes" className="rounded-xl w-16 h-16" />
                 </figure>

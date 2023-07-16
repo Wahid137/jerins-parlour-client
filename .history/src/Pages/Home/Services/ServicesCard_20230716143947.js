@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const ServicesCard = ({ service }) => {
     const { name, img, price, details } = service;
     return (
-        <Link to="/book">
-            <div className="card w-96 bg-secondary mx-auto hover:bg-base-100">
+        <Link>
+            <div className="card w-96 bg-secondary mx-auto shadow-xl">
                 <figure className="mt-10">
                     <img src={img} alt="Shoes" className="rounded-xl w-16 h-16" />
                 </figure>
-                <div className="card-body pt-2 items-center text-center">
+                <div className="card-body mt-0 items-center text-center">
                     <h2 className="font-semibold">{name}</h2>
                     <p className='text-primary font-bold'>${price}</p>
                     <p>{details}</p>
