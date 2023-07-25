@@ -6,7 +6,7 @@ import { AuthContext } from '../../../Context/AuthProvider';
 const BookingList = () => {
     const { user } = useContext(AuthContext)
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`
+    const url = `https://jerins-parlour-server-sepia.vercel.app/bookings?email=${user?.email}`
     const { data: payments = [], isLoading } = useQuery({
         queryKey: ['payments', user?.email],
         queryFn: async () => {

@@ -32,7 +32,7 @@ const AddService = () => {
                     }
 
                     //save add service's  information in database
-                    fetch('http://localhost:5000/addservice', {
+                    fetch('https://jerins-parlour-server-sepia.vercel.app/addservice', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -5,14 +5,14 @@ const OrderList = () => {
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookins'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/bookings');
+            const res = await fetch('https://jerins-parlour-server-sepia.vercel.app/bookings');
             const data = await res.json();
             return data;
         }
     })
 
     const handleMakeAdmin = id => {
-        fetch(`http://localhost:5000/users/admin/${id}`, {
+        fetch(`https://jerins-parlour-server-sepia.vercel.app/users/admin/${id}`, {
             method: 'PUT',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

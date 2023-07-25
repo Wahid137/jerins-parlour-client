@@ -14,7 +14,7 @@ const ManageService = () => {
     const { data: addservices = [], refetch, isLoading } = useQuery({
         queryKey: ['addservices'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/addservice', {
+            const res = await fetch('https://jerins-parlour-server-sepia.vercel.app/addservice', {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }
@@ -28,7 +28,7 @@ const ManageService = () => {
     }
 
     const handleDeleteService = doctor => {
-        fetch(`http://localhost:5000/doctors/${doctor._id}`, {
+        fetch(`https://jerins-parlour-server-sepia.vercel.app/doctors/${doctor._id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

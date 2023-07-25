@@ -15,7 +15,7 @@ const MakeAdmin = () => {
 
 
     const handleAdmin = (data) => {
-        fetch(`http://localhost:5000/users/admin/${id}`, {
+        fetch(`https://jerins-parlour-server-sepia.vercel.app/users/admin/${id}`, {
             method: 'PUT',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

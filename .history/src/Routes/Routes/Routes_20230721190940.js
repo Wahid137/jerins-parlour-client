@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/book/:id',
                 element: <Book></Book>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://jerins-parlour-server-sepia.vercel.app/services/${params.id}`)
             }
         ]
     },

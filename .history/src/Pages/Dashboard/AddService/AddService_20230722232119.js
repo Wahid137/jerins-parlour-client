@@ -32,7 +32,7 @@ const AddService = () => {
                     }
 
                     //save doctor's information in database
-                    fetch('http://localhost:5000/makeadmin', {
+                    fetch('https://jerins-parlour-server-sepia.vercel.app/makeadmin', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -5,7 +5,7 @@ const ManageService = () => {
     const { data: services = [], refetch } = useQuery({
         queryKey: ['services'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/bookings');
+            const res = await fetch('https://jerins-parlour-server-sepia.vercel.app/bookings');
             const data = await res.json();
             return data;
         }

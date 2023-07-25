@@ -7,7 +7,7 @@ const BookingList = () => {
     const { user } = useContext(AuthContext)
     const { data: payments = [], isLoading } = useQuery({
         queryKey: ['payments', user?.email],
-        queryFn: () => fetch(`http://localhost:5000/payments?email=${user?.email}`, {
+        queryFn: () => fetch(`https://jerins-parlour-server-sepia.vercel.app/payments?email=${user?.email}`, {
             queryKey
         })
             .then(res => res.json())

@@ -5,7 +5,7 @@ const ManageService = () => {
     const { data: addServices = [], refetch } = useQuery({
         queryKey: ['addServices'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/addservice');
+            const res = await fetch('https://jerins-parlour-server-sepia.vercel.app/addservice');
             const data = await res.json();
             return data;
         }

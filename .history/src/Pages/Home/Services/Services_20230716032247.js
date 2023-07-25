@@ -8,7 +8,7 @@ import ServicesCard from './ServicesCard';
 const Services = () => {
     const { data: services = [], isLoading } = useQuery({
         queryKey: ['services'],
-        queryFn: () => fetch('http://localhost:5000/services')
+        queryFn: () => fetch('https://jerins-parlour-server-sepia.vercel.app/services')
             .then(res => res.json())
     })
 

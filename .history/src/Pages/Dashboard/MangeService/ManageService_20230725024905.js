@@ -6,7 +6,7 @@ const ManageService = () => {
     const { data: addservices = [], refetch } = useQuery({
         queryKey: ['addservices'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/addservice', {
+            const res = await fetch('https://jerins-parlour-server-sepia.vercel.app/addservice', {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }

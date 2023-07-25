@@ -16,7 +16,7 @@ const Review = () => {
             email: user?.email
         }
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://jerins-parlour-server-sepia.vercel.app/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
